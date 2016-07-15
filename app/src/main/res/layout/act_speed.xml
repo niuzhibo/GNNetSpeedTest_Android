@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:weightSum="8">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_marginTop="20dip">
+
+        <ProgressBar
+            android:id="@+id/download_progress_bar"
+            style="@style/SecondCustomProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:text="0Mbps"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44B39D"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="下载速度"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_marginTop="20dip">
+
+        <ProgressBar
+            android:id="@+id/upload_progress_bar"
+            style="@style/SecondCustomProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/upload_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:text="0Mbps"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44B39D"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="上传速度"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="开始测试" />
+
+
+
+
+</LinearLayout>
